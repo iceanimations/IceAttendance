@@ -23,7 +23,7 @@ namespace Ice_Attendance
         private void ts_btn_AddEmp_Click(object sender, EventArgs e)
         {
             tabControl1.Visible = true;
-            tabControl2.Visible = false;
+            tab_Add_Dept.Visible = false;
             tabControl3.Visible = false;
             tabControl4.Visible = false;
         }
@@ -33,7 +33,7 @@ namespace Ice_Attendance
         private void Form1_Load(object sender, EventArgs e)
         {
             tabControl1.Visible = false;
-            tabControl2.Visible = false;
+            tab_Add_Dept.Visible = false;
             tabControl3.Visible = false;
             tabControl4.Visible = false;
             groupBox1.Enabled = false;
@@ -45,7 +45,7 @@ namespace Ice_Attendance
         private void ts_btn_AddDept_Click(object sender, EventArgs e)
         {
             tabControl1.Visible = false;
-            tabControl2.Visible = true;
+            tab_Add_Dept.Visible = true;
             tabControl3.Visible = false;
             tabControl4.Visible = false;
         }
@@ -53,7 +53,7 @@ namespace Ice_Attendance
         private void ts_btn_AddDesg_Click(object sender, EventArgs e)
         {
             tabControl1.Visible = false;
-            tabControl2.Visible = false;
+            tab_Add_Dept.Visible = false;
             tabControl3.Visible = true;
             tabControl4.Visible = false;
         }
@@ -61,7 +61,7 @@ namespace Ice_Attendance
         private void ts_btn_Report_Click(object sender, EventArgs e)
         {
             tabControl1.Visible = false;
-            tabControl2.Visible = false;
+            tab_Add_Dept.Visible = false;
             tabControl3.Visible = false;
             tabControl4.Visible = true;
         }
@@ -201,7 +201,14 @@ namespace Ice_Attendance
         private void ts_Dept_Cancel_Click(object sender, EventArgs e)
         {
             groupBox3.Enabled = false;
+            groupBox4.Visible = false;
         }
+
+        private void ts_Dept_Close_Click(object sender, EventArgs e)
+        {
+            
+        }
+
 
 
     }

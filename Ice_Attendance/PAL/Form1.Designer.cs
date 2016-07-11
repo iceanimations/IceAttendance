@@ -47,7 +47,7 @@
             this.ts_Desg_Cancel = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator23 = new System.Windows.Forms.ToolStripSeparator();
             this.ts_Desg_Close = new System.Windows.Forms.ToolStripButton();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tab_Add_Dept = new System.Windows.Forms.TabControl();
             this.tp_AddDept = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -135,7 +135,7 @@
             this.tp_AddDesg.SuspendLayout();
             this.panel7.SuspendLayout();
             this.ts_AddDesg.SuspendLayout();
-            this.tabControl2.SuspendLayout();
+            this.tab_Add_Dept.SuspendLayout();
             this.tp_AddDept.SuspendLayout();
             this.panel6.SuspendLayout();
             this.ts_AddDepart.SuspendLayout();
@@ -316,14 +316,14 @@
             this.ts_Desg_Close.Size = new System.Drawing.Size(56, 20);
             this.ts_Desg_Close.Text = "Close";
             // 
-            // tabControl2
+            // tab_Add_Dept
             // 
-            this.tabControl2.Controls.Add(this.tp_AddDept);
-            this.tabControl2.Location = new System.Drawing.Point(3, 3);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1345, 645);
-            this.tabControl2.TabIndex = 0;
+            this.tab_Add_Dept.Controls.Add(this.tp_AddDept);
+            this.tab_Add_Dept.Location = new System.Drawing.Point(3, 3);
+            this.tab_Add_Dept.Name = "tab_Add_Dept";
+            this.tab_Add_Dept.SelectedIndex = 0;
+            this.tab_Add_Dept.Size = new System.Drawing.Size(1345, 645);
+            this.tab_Add_Dept.TabIndex = 0;
             // 
             // tp_AddDept
             // 
@@ -473,6 +473,7 @@
             this.ts_Dept_Close.Name = "ts_Dept_Close";
             this.ts_Dept_Close.Size = new System.Drawing.Size(56, 22);
             this.ts_Dept_Close.Text = "Close";
+            this.ts_Dept_Close.Click += new System.EventHandler(this.ts_Dept_Close_Click);
             // 
             // panel4
             // 
@@ -923,7 +924,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.tabControl2);
+            this.panel2.Controls.Add(this.tab_Add_Dept);
             this.panel2.Location = new System.Drawing.Point(232, 97);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1351, 648);
@@ -1071,7 +1072,7 @@
             this.panel7.ResumeLayout(false);
             this.ts_AddDesg.ResumeLayout(false);
             this.ts_AddDesg.PerformLayout();
-            this.tabControl2.ResumeLayout(false);
+            this.tab_Add_Dept.ResumeLayout(false);
             this.tp_AddDept.ResumeLayout(false);
             this.tp_AddDept.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -1128,7 +1129,7 @@
         private System.Windows.Forms.TabPage tp_Reports;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tp_AddDesg;
-        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabControl tab_Add_Dept;
         private System.Windows.Forms.TabPage tp_AddDept;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tp_AddEmp;
